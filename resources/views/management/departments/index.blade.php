@@ -10,6 +10,43 @@
         Create New Department
       </a>
     </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Director</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            @foreach($departments as $department)
+              <tr>
+                <td>{{ $loop->index +1 }}</td>
+                <td>{{ $department->name }}</td>
+                <td>{{ $department->director_id }}</td>
+                <td>
+                  
+                </td>
+              </tr>
+            @endforeach
+           
+
+
+          </tbody>
+
+
+        </table>
+
+
+
+      </div>
+    </div>
+
 
   </div>
 @endsection
