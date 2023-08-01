@@ -19,6 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'dashboard']);
 
 Route::get('departments/index', [DepartmentController::class, 'index'])->name('departmentsIndex');
+Route::get('departments/create', [DepartmentController::class, 'create'])->name('departmentsCreate');
+Route::post('departments/store', [DepartmentController::class, 'store'])->name('departmentsStore');
 
 Route::get('users.index', [UserController::class, 'index'])
     ->name('usersIndex');
