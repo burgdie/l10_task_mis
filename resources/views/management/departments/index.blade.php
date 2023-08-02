@@ -30,7 +30,9 @@
                 <td>{{ $department->name }}</td>
                 <td>{{ $department->director_id }}</td>
                 <td>
-                  
+                  <a href="{{ route('departmentsEdit', $department->id ) }}" class="btn btn-success">
+                    <i class="fa fa-edit"></i>
+                  </a>
                 </td>
               </tr>
             @endforeach
