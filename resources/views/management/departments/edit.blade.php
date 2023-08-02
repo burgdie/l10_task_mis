@@ -14,7 +14,7 @@
         <div class="form-group">
             <label for="director_id">Director</label>
           <select name="director_id" class="form-control">
-            <option value="0" selected>Select a person</option>
+            <option value="" selected>Select a person</option>
             <option value="1" @if($department->director_id == '1') selected @endif>IT Director</option>
             <option value="2" @if($department->director_id == '2') selected @endif>HR Director</option>
 
